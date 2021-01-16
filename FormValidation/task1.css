@@ -1,0 +1,175 @@
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    font-family: Poppins;
+    font-size: 16px;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+h2{
+    margin-bottom: -15px;
+}
+.form{
+    margin-left: -30px;
+    
+}
+
+#form div{
+    display: inline-block;
+}
+
+
+
+.form form{
+    box-shadow: 0px 8px hsla(247, 11%, 15%, 0.089);
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 0px;
+    height: 450px;
+    width: 430px;
+    margin-bottom: 30px;
+}
+input{
+    border-radius: 5px;
+    border-color: lightgray;
+    margin: 10px;
+    width: 380px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.text{
+margin-top: 150px;
+text-align: left;
+width: 400px;
+color: white;
+}
+
+.form button{
+background-color: hsl(248, 32%, 49%);
+color: white;
+border-radius:10px;
+height: 40px;
+width: 430px;
+box-shadow: 0px 7px hsla(247, 11%, 15%, 0.089);
+}
+#btn{
+background-color: hsl(154, 59%, 51%);
+color: white;
+width: 380px;
+height: 35px;
+text-transform: uppercase;
+}
+
+.form-control{
+    position: relative;
+}
+.form-control input{
+    display: block;
+    border-color: rgb(233, 230, 230);
+}
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.error i{
+   visibility: visible;
+    color: red;
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+    font-style: italic;
+}
+.form-control i{
+    position: relative;
+    top: -40px;
+    right: -380px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    right: 20px;
+    visibility: hidden;
+}
+
+@media(max-width: 375px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    }
+
+    .form{
+        margin: 0px;
+        width: 200px;
+        
+    }
+    .form form{
+        box-shadow: 0px 5px black;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 0px;
+        height: 450px;
+        width: 200px;
+    }
+    input{
+        border-radius: 5px;
+        border-color: lightgray;
+        margin: 10px;
+        width: 160px;
+        height: 35px;
+        
+    }
+    
+    .text{
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    margin-bottom: 15px;
+    }
+
+    .form button{
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        border-radius:10px;
+        height: 60px;
+        width: 200px;
+        box-shadow: 0px 2px black;
+        padding: 15px;
+        }
+    #btn{
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        width: 160px;
+        height: 40px;
+        text-transform: uppercase;
+    }
+    
+    h2{
+        font-size: 18px;
+        margin-bottom: -20px;
+    }
+
+    
+    }
